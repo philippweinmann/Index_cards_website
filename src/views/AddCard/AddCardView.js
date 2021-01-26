@@ -42,7 +42,6 @@ const AddCardView = () => {
         front: input.question,
         back: input.answer,
         subject: input.subject,
-        field: input.field,
         link: input.link,
       }),
       headers: { 'Content-type': 'application/json; charset=UTF-8' }
@@ -70,7 +69,6 @@ const AddCardView = () => {
                 name: '',
                 subject: '',
                 answer: '',
-                field: '',
                 link: '',
                 policy: false
               }}
@@ -79,7 +77,6 @@ const AddCardView = () => {
                 question: Yup.string().max(255).required('Question is required'),
                 name: Yup.string().max(255).required('Name is required'),
                 subject: Yup.string().max(255).required('Subject is required'),
-                field: Yup.string().max(255).required('Field is required'),
                 link: Yup.string().max(255).required('Link is required'),
                 answer: Yup.string().max(255).required('answer is required'),
                 policy: Yup.boolean().oneOf([true], 'This field must be checked')
@@ -162,19 +159,6 @@ const AddCardView = () => {
                     onChange={handleChange}
                     type="answer"
                     value={values.answer}
-                    variant="outlined"
-                  />
-                  <TextField
-                    error={Boolean(touched.field && errors.field)}
-                    fullWidth
-                    helperText={touched.field && errors.field}
-                    label="Field"
-                    margin="normal"
-                    name="field"
-                    onBlur={handleBlur}
-                    onChange={handleChange}
-                    type="field"
-                    value={values.field}
                     variant="outlined"
                   />
                   <TextField

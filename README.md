@@ -2,11 +2,12 @@
 
 ## About
 
-This Website was coded for a project at University (KIT) for the course Mobile computing and internet of things. It was Coded in react js and requires a fake local rest api.
+This Website was coded for a project at University (KIT) for the course Mobile computing and internet of things. It was Coded in react js and requires a fake local rest api to run alongside it.
 
 ## Prerequesites
 
-3. Install dependencies for this project: `npm install`
+1. Rest API runs on port 3000 (see: https://github.com/philippweinmann/MC_LOCAL_REST_API_INDEX_CARDS)
+2. Install dependencies for this project: `npm install`
 
 ## How to start
 
