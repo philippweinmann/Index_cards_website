@@ -34,7 +34,7 @@ const AddCardView = () => {
   const navigate = useNavigate();
 
   const postCard = async (input) => {
-    fetch('http://116.202.29.212:3000/index_cards', {
+    fetch('http://localhost:3000/index_cards', {
       method: 'POST',
       body: JSON.stringify({
         id: input.question + input.answer,

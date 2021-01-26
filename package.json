@@ -1,12 +1,11 @@
 {
-  "homepage": "http://philippweinmann.github.io/Index_cards_website",
   "name": "react-material-dashboard",
   "author": "DeviasIO",
   "licence": "MIT",
   "version": "1.0.0",
   "private": false,
   "scripts": {
-    "start": "react-scripts start",
+    "start": "PORT=3001 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",

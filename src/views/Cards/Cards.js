@@ -72,7 +72,7 @@ const Cards = () => {
   const [activeStep, setActiveStep] = React.useState(0);
   const [allCardsInfo = [], setAllCardsInfo] = React.useState('');
 
-  useEffect(() => fetch('http://116.202.29.212:3000/index_cards').then((response) => response.json()).then((data) => {
+  useEffect(() => fetch('http://localhost:3000/index_cards').then((response) => response.json()).then((data) => {
     setAllCardsInfo(data);
     console.log(allCardsInfo);
   }), []);
